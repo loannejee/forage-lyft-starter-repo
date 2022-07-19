@@ -6,5 +6,6 @@ class Car(ABC):
         self.last_service_date = last_service_date
 
     @abstractmethod
+    # Every class needs to have this method:
     def needs_service(self):
         pass
