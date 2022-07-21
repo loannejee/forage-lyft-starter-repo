@@ -3,7 +3,7 @@ Serviceable is an abstract class which is a blueprint for its child classes. It 
 """
 from serviceable import Serviceable
 
-
+# Car is a the SubClass of Serviceable. It is also the whole to compositions such as the SubSubClass Engine and Battery
 class Car(Serviceable):
     def __init__(self, engine, battery):
         self.engine = engine
