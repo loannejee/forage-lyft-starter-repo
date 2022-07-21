@@ -1,13 +1,14 @@
 from battery.battery import Battery
-import datetime
+from utils import add_years_to_date
 
 class Spindler(Battery):
-    def __init__(self, last_service_date):
-        self.last_service_date = last_service_date # 2017
-        self.next_service_date = self.last_service_date.replace(year=self.last_service_date.year + 4) # 2021
+    def __init__(self, current_date, last_service_date):
+        self.current_date = current_date
+        self.last_service_date = last_service_date
 
     def needs_service(self):
-        if (datetime.date.today() > self.next_service_date): # 2022 > 2021
+        date_which_battery_should_be_serviced_by = add_years_to_date(self.last_service_date, 2)
+        if date_which_battery_should_be_serviced_by < self.current_date:
             return True
         else:
             return False

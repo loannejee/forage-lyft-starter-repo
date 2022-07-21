@@ -1,10 +1,5 @@
-from car import Car
-from abc import ABC, abstractmethod
+from abc import ABC
 
-class Engine(Car, ABC):
-    def __init__(self):
-        pass
-    
-    @abstractmethod
+class Engine(ABC):
     def needs_service(self):
         pass
