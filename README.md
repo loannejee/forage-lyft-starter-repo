@@ -10,3 +10,8 @@ https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-di
 Refactoring
 
 https://refactoring.guru/design-patterns/factory-method
+
+###### Task 3:
+Unit Testing
+
+https://realpython.com/python-testing/
