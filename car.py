@@ -9,11 +9,11 @@ from serviceable import Serviceable
 # Car is the SubClass of Serviceable. 
 # It is also whole/parent to compositions/children: Engine and Battery
 class Car(Serviceable):
-    def __init__(self, engine, battery, tire):
+    def __init__(self, engine, battery, tires):
         self.engine = engine
         self.battery = battery
-        self.tire = tire
+        self.tires = tires
 
     def needs_service(self):
-        if (self.engine.needs_service() or self.battery.needs_service() or self.tire.needs_service()):
+        if (self.engine.needs_service() or self.battery.needs_service() or self.tires.needs_service()):
             return True

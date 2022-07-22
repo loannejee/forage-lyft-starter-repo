@@ -3,7 +3,7 @@ from tire.tire import Tire
 
 # Carrigan tires should be serviced only when one or more of the values in the
 # tire wear array is greater than or equal to 0.9. 
-class CarriganTire(Tire):
+class CarriganTires(Tire):
     def __init__(self, tire_wear_array):
         self.tire_wear_array = tire_wear_array
 
