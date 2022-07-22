@@ -20,3 +20,16 @@ class CarriganTire(Tire):
             return True
         else:
             return False 
+
+
+    """
+    Model Answer:
+    
+    def needs_service(self):
+        for tire in self.tire_wear:
+            if tire >= 0.9:
+                return True
+        return False
+
+    """
+    
